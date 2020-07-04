@@ -1,0 +1,10 @@
+N = list(str(input())) # [A,B,C,D,E]
+Number_List = ['ABC', 'DEF', 'GHI', 'JKL', 'MNO', 'PQRS', 'TUV', 'WXYZ']
+time = []
+for i in N:
+    for j in Number_List:
+        if j.find(i) != -1:
+            second = Number_List.index(j) +3
+            time.append(second)
+
+print(sum(time))
