@@ -1,0 +1,16 @@
+N = str(''.join(input().split()))
+N1 =[]
+N2 =[]
+for i in range(int(len(N)/2)):
+    Add1 = N[i]
+    N1.append(Add1)
+    N1_reversed = int(''.join(reversed(N1)))
+for i in range(int(len(N)/2), int(len(N))):
+    Add2 = N[i]
+    N2.append(Add2)
+    N2_reversed = int(''.join(reversed(N2)))
+
+if N1_reversed > N2_reversed:
+    print(N1_reversed)
+else:
+    print(N2_reversed)
