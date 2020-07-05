@@ -1,0 +1,9 @@
+N = int(input())
+Wrong_Count = 0
+for i in range(N):
+    words = str(input())
+    for j in range(len(words)):
+        if int(words.index(words[j]) + words.count(words[j])-1) != int(words.rindex(words[j])):
+            Wrong_Count += 1
+            break
+print(N-Wrong_Count)
