@@ -1,0 +1,8 @@
+C_Alpha = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z=', ]
+word = str(input())  # ['a', 'b','c','d','-','e','=']
+
+for i in C_Alpha:
+    word= word.replace(i, "+")
+print(len(word))
+
+#Replace 함수는 맨 왼쪽부터 비교하는 값이 있으면 바꿔준다.
