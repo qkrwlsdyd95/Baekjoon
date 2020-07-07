@@ -1,0 +1,16 @@
+N = int(input())
+
+cnt = 1
+first = 1
+add_on = 6
+
+if N ==1 :
+    print(1)
+else:
+    while True:
+        first += add_on
+        cnt +=1
+        if N <= first:
+            print(cnt)
+            break
+        add_on += 6
